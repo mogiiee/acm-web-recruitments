@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="static/style.css">
+    <body>
+    <div class=" filter"></div>
+        
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>email</th>
+                <th>balance</th>
+    
+            </tr>
+            {% for i in db %}
+            <tr>
+                <td>{{db.index(i) + 1}}</td>
+                <td>{{i["name"]}}</td>
+                <td>{{i["email"]}}</td>
+                <td>{{i["balance"]}}</td>
+            </tr>
+            {% endfor %}
+           
+        </table>
+            
+    </body>
+    </head>
+</html>
