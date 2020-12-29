@@ -4,6 +4,9 @@
     outline: 0;
 
 }
+.heading{
+    text-align: center;
+}
 .filter{
     position: absolute;
     top: 0;
